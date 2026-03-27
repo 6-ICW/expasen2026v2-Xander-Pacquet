@@ -1,6 +1,7 @@
 import { useState } from "react"
 import UserList from "./component/UserList"
 import UserForm from "./component/UserForm"
+import Aantal from "./component/aantal"
 
 function App() {
 
@@ -22,9 +23,11 @@ function App() {
     setLeerlingen([...leerlingen, newLeerling])
   }
 
+
   return (
     <>
     <UserForm onAdd={onAdd}/>
+    <Aantal aantalLln={leerlingen.length}/>
     <UserList leerlingen={leerlingen}/>
 
     </>

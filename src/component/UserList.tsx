@@ -13,7 +13,7 @@ function UserList({leerlingen}:Props){
 
     return (<>
     <ul>
-        {leerlingen.map((leerling,i)=>(<li key={i}>{leerling.naam.charAt(0).toUpperCase() + String(leerling).slice(1)}, {leerling.hobby}</li>))}
+        {leerlingen.map((leerling,i)=>(<li key={i}>{leerling.naam}{leerling.hobby}</li>))}
     </ul>
     </>)
 }
